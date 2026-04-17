@@ -5,8 +5,8 @@
     "playerType": "Batsman",
     "rating": 92,
     "battingStyle": "Right-hand bat",
-    "price": 2000000,
-    "playerImg": "https://resources.pulse.icc-cricket.com/players/284/1407.png"
+    "price": 500,
+    "playerImg": "https://i.ibb.co.com/YTKbGsBx/wasim-akram.jpg"
   },
   {
     "playerName": "Shaheen Afridi",
@@ -14,8 +14,8 @@
     "playerType": "Bowler",
     "rating": 89,
     "battingStyle": "Left-hand bat",
-    "price": 1600000,
-    "playerImg": "https://resources.pulse.icc-cricket.com/players/284/8045.png"
+    "price": 1000,
+    "playerImg": "https://i.ibb.co.com/YTKbGsBx/wasim-akram.jpg"
   },
   {
     "playerName": "Mohammad Rizwan",
@@ -23,8 +23,8 @@
     "playerType": "Wicket-Keeper",
     "rating": 88,
     "battingStyle": "Right-hand bat",
-    "price": 1800000,
-    "playerImg": "https://resources.pulse.icc-cricket.com/players/284/3106.png"
+    "price": 300,
+    "playerImg": "https://i.ibb.co.com/YTKbGsBx/wasim-akram.jpg"
   },
   {
     "playerName": "Steve Smith",
@@ -33,7 +33,7 @@
     "rating": 93,
     "battingStyle": "Right-hand bat",
     "price": 2200000,
-    "playerImg": "https://resources.pulse.icc-cricket.com/players/284/237.png"
+    "playerImg": "https://i.ibb.co.com/YTKbGsBx/wasim-akram.jpg"
   },
   {
     "playerName": "Pat Cummins",
@@ -42,7 +42,7 @@
     "rating": 93,
     "battingStyle": "Right-hand bat",
     "price": 2100000,
-    "playerImg": "https://resources.pulse.icc-cricket.com/players/284/553.png"
+    "playerImg": "https://i.ibb.co.com/YTKbGsBx/wasim-akram.jpg"
   },
   {
     "playerName": "David Warner",
@@ -51,7 +51,7 @@
     "rating": 87,
     "battingStyle": "Left-hand bat",
     "price": 1800000,
-    "playerImg": "https://resources.pulse.icc-cricket.com/players/284/219.png"
+    "playerImg": "https://i.ibb.co.com/YTKbGsBx/wasim-akram.jpg"
   },
   {
     "playerName": "Ben Stokes",
@@ -60,7 +60,7 @@
     "rating": 92,
     "battingStyle": "Left-hand bat",
     "price": 2400000,
-    "playerImg": "https://resources.pulse.icc-cricket.com/players/284/308.png"
+    "playerImg": "https://i.ibb.co.com/YTKbGsBx/wasim-akram.jpg"
   },
   {
     "playerName": "Jos Buttler",
