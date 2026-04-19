@@ -4,6 +4,7 @@ import './App.css'
 import Banner from './Components/Banner/Banner'
 import Navbar from './Components/Navbar/Navbar'
 import Players from './HomePage/Players/Players'
+import MiddleSection from './Components/MiddleSection/MiddleSection'
 
 const fetchPlayer = async() => {
   const res =  fetch('/data.json').then(res => res.json())
@@ -23,6 +24,8 @@ function App() {
     <Suspense fallback="Spinning take form daisyUI later">
       <Players playerPromise={playerPromise}></Players>  
     </Suspense>
+
+    <MiddleSection></MiddleSection>
     </>
    
     
