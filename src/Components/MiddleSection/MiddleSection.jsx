@@ -10,7 +10,7 @@ const MiddleSection = () => {
                  </p>
             </div>
             <div className='flex gap-4 text-center'> 
-                <button className="btn rounded-4xl bg-linear-to-r  from-[#4F39F6] to-[#9514FA] text-clip ">Explore Products</button>
+                <button className="btn rounded-4xl bg-white "> <span className='bg-linear-to-r  from-[#4F39F6] to-[#9514FA] bg-clip-text'>Explore Products</span> </button>
                 <button className="btn btn-info rounded-4xl">View Pricing</button>
             </div>
         </div>
