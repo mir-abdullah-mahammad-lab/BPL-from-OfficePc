@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar/Navbar'
 import Players from './HomePage/Players/Players'
 import MiddleSection from './Components/MiddleSection/MiddleSection'
 import ThirdSection from './ui/ThirdSection/ThirdSection'
+import LastThirdSection from './ui/LastThirdSection/LastThirdSection'
 
 const fetchPlayer = async() => {
   const res =  await fetch('/data.json').then(res => res.json())
@@ -30,6 +31,7 @@ function App() {
 
     <MiddleSection></MiddleSection>
     <ThirdSection ></ThirdSection>
+    <LastThirdSection></LastThirdSection>
     </>
    
     
