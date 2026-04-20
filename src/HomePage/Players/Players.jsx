@@ -1,26 +1,37 @@
-import { use, React } from 'react'
-import { FaUser } from 'react-icons/fa';
+import { use, React, useState } from 'react'
+import AvailablePlayers from './AvailablePlayers/AvailablePlayers';
+import SelectedPlayers from './SelectedPlayers/SelectedPlayers';
 
-const Players = ({playerPromise}) => {
-    // console.log(playerPromise)
+
+const Players = ({playerPromise, setCoins, coins}) => {
+    console.log('players-promise',playerPromise)
     const data = use (playerPromise)
-    console.log('DATA', data)
+    
+    
+    const [selectedType, setSelectedType] = useState('available')
+    // console.log('akjdalhfaslkdjkls',selectedType)
+
+    const [selectedPlayers, setSelectedPlayers] = useState([])
     return (
-        <div>
-           <div className="card bg-base-100 w-96 shadow-sm">
-                <figure>
-                    <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes" />
-                </figure>
-                <div className="card-body">
-                    <h2 className="card-title"> <FaUser /> Card Title</h2>
-                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                    <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
-                    </div>
+        <div className='container mx-auto my-15'>
+            <div className='flex justify-between mb-10'>
+                {selectedType === 'available'? <p className='font-bold text-3xl'>Available Players</p> :
+                 <p className='font-bold text-3xl'>selected(0)</p>}
+                <div className='flex gap-1'>
+                    <button onClick={()=>{ setSelectedType("available")}}
+                    className={`btn ${selectedType === 'available'? "bg-[#E7FE29]" : "bg-red-500"}  rounded-r-none rounded-2xl`}>Available</button>
+                    <button onClick={()=>{setSelectedType('selected')}}
+                    className={`btn ${selectedType === 'selected'? "bg-[#E7FE29]" : "bg-red-500"}  rounded-l-none rounded-2xl`}>Selceted(0)</button>
                 </div>
-            </div>
+            </div>       
+            { selectedType === 'available'? (<AvailablePlayers 
+            data={data} 
+            setCoins={setCoins} 
+            coins={coins} 
+            setSelectedPlayers={setSelectedPlayers}
+            selectedPlayers={selectedPlayers}
+            ></AvailablePlayers>) :
+            (<SelectedPlayers selectedPlayers={selectedPlayers}></SelectedPlayers>) }
         </div>
     );
 };
