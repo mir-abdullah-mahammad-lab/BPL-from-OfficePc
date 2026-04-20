@@ -2,13 +2,13 @@ import React from 'react';
 
 const LastThirdSection = () => {
     return (
-        <div className='w-[100em] h-[30em] bg-red-300 aspect-auto flex flex-col item-centre justify-center'>
+        <div className='w-full max-w-[100em] h-[30em] bg-red-300 aspect-auto flex flex-col item-centre justify-center'>
            <div className='text-center aspect-auto'>
                 <h1 className='text-3xl'>Simple Transparent Pricing </h1>
                 <p>Start using premium digital tools in minutes, not hours.</p>
            </div>
-           <div className='flex items-center container mx-auto '>
-               <div className='border-green-600 ml-55 aspect-auto'>
+           <div className='flex flex-col items-center md:flex-row md:items-center gap-4 container mx-auto '>
+               <div className='ml-55 aspect-auto'>
                              <div className="card w-96 bg-base-100 shadow-sm">
                                             <div className="card-body">
                         <span className="badge badge-xs badge-warning">Most Popular</span>
