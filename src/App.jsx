@@ -5,6 +5,7 @@ import Banner from './Components/Banner/Banner'
 import Navbar from './Components/Navbar/Navbar'
 import Players from './HomePage/Players/Players'
 import MiddleSection from './Components/MiddleSection/MiddleSection'
+import ThirdSection from './ui/ThirdSection/ThirdSection'
 
 const fetchPlayer = async() => {
   const res =  await fetch('/data.json').then(res => res.json())
@@ -28,6 +29,7 @@ function App() {
     </Suspense>
 
     <MiddleSection></MiddleSection>
+    <ThirdSection ></ThirdSection>
     </>
    
     
